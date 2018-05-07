@@ -1,0 +1,154 @@
+ ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+	background-color: #4F5152;
+}
+
+/* For this site, note that the .container element is invisible.
+   We're using it for structure only. */
+h2 {
+	font-size: 3vw;
+	color: white;
+}
+.home {
+	position: fixed;
+	width: 6em;
+}
+.container {
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	width: 100%;
+	display: grid;
+	grid-gap: 3%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	background-color: rgba(0, 9, 53, 1);
+}
+
+.global-navbar {
+	padding: 1em 1em 1em 1em;
+	background: rgba(4, 24, 75, 1);
+	grid-column: 1 / 5;
+	text-align: center;
+}
+
+.global-navbar h1 {
+	font-size: 7vw;
+	font-family: 'Poiret One', cursive;
+	color: white;
+	
+}
+
+.global-navbar h3 {
+	color: rgba(181, 141, 0, 1);
+	grid-column: 1 / 5;
+}
+
+.global-navbar a {
+	text-decoration: none;
+	color: white;
+
+}
+
+.global-navbar a:hover {
+	background-color: rgba(181, 141, 0, 1);
+	color: white;
+}
+	
+
+.global-navbar li {
+	display: inline;
+	font-size: 2.2vw;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: rgba(181, 141, 0, .75);
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.content {
+	padding: 1em;
+	color: white;
+	grid-column: 2 / 4;
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.2vw;
+	text-align: center;
+	line-height: 2.5vw;
+}
+
+.sidebar {
+	padding: 1em;
+	background-color: rgba(0, 9, 53, 1);
+	grid-column: 4 / 5;
+	color: white;
+}
+
+.headshots {
+	grid-column: 2 / 4;
+	color: white;
+	font-size: 1.75vw;
+	text-align: center;
+}
+.bios {
+	grid-column: 3 / 5;
+	color: white;
+	font-size: 2vw;
+}
+table, th, td {
+    border: 1px solid white;
+    padding: .5vw;
+}
+
+iframe {
+	text-align: center;
+}
+
+@media (max-width: 660px) {
+
+	.container {
+	display: block;
+	}
+
+
+	/*.content {
+		grid-column: 1 / 5;
+	}
+
+	.sidebar {
+		grid-column: 2 / 5;
+	} you can also do this to make simpler grids for mobile! 
+	check in responsive design mode in chrome*/
+
+
+} /*end of media query
